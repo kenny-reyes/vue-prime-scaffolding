@@ -6,11 +6,14 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [
+    "dismissable",
     "materialdesignicons",
     "panelmenu",
     "primeflex",
     "primeuix",
     "primevue",
+    "slidedown",
+    "slideup",
     "styleclass",
     "webfontloader"
   ],

@@ -1,36 +1,25 @@
 @import './base.css';
 @import 'primeflex/primeflex.css';
+@import 'primeicons/primeicons.css';
+/* Tailwind removed */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+:root {
+  --p-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+body {
+  margin: 0;
+  background: var(--p-surface-ground);
+  font-family: var(--p-font-family);
+  color: var(--p-text-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.app-dark {
+  --p-surface-ground: #121212;
+  --p-surface-0: #1e1e1e;
+  --p-text-color: rgba(255, 255, 255, 0.87);
+  --p-text-color-secondary: rgba(255, 255, 255, 0.6);
 }
