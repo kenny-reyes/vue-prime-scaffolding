@@ -1,0 +1,25 @@
+{
+  "code": "ES",
+  "menu": {
+    "users": "Usuarios",
+    "patients": "Pacientes",
+    "studies": "Estudios",
+    "series": "Series",
+    "owners": "Clientes",
+    "protocols": "Protocolos"
+  },
+  "actions": {
+    "search": "Buscar",
+    "add": "Agregar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "save": "Guardar",
+    "cancel": "Cancelar"
+  },
+  "errors": {
+    "required": "Requerido",
+    "invalid": "Inválido",
+    "min": "Mínimo",
+    "max": "Máximo"
+  }
+}
