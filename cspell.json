@@ -6,8 +6,12 @@
   "dictionaryDefinitions": [],
   "dictionaries": [],
   "words": [
+    "materialdesignicons",
+    "panelmenu",
     "primeflex",
+    "primeuix",
     "primevue",
+    "styleclass",
     "webfontloader"
   ],
   "ignoreWords": [],

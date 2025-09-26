@@ -19,6 +19,7 @@
     "spellcheck": "cspell lint --no-progress --show-suggestions --cache --cache-location .cspellcache '**/*'"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "@primeuix/themes": "^1.2.3",
     "pinia": "^3.0.3",
     "primeflex": "^4.0.0",
