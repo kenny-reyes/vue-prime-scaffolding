@@ -106,8 +106,22 @@ See the official docs for more details and available components: `https://primev
 
 ## Other features
 
-- **Prettier**: Opinionated code formatter that enforces a consistent style across JavaScript/TypeScript and Vue SFCs. Use the provided script to auto-format files and keep diffs small and readable in reviews.
-- **CSpell**: Source code spell checker to catch typos in identifiers, strings, comments, and docs. It reduces noisy diffs and improves readability; customize dictionaries in `cspell.json`.
-- **I18n**: Application internationalization powered by `vue-i18n`, with messages and date/time formats per locale. The default language is driven by the `VITE_DEFAULT_LANGUAGE` environment variable.
-- **Stylelint**: Lints styles inside `.vue` SFCs and standalone CSS using the recommended Vue config. It helps prevent invalid CSS and enforces consistent conventions across the codebase.
-- **webfontloader**: Asynchronously loads web fonts to avoid render-blocking and reduce layout shifts. Fonts are preloaded at startup, improving perceived performance and visual stability.
+### Prettier
+
+Opinionated code formatter that enforces a consistent style across JavaScript/TypeScript and Vue SFCs. Use the provided script to auto-format files and keep diffs small and readable in reviews.
+
+### CSpell
+
+Source code spell checker to catch typos in identifiers, strings, comments, and docs. It reduces noisy diffs and improves readability; customize dictionaries in `cspell.json`.
+
+### I18n
+
+Application internationalization powered by `vue-i18n`, with messages and date/time formats per locale. The default language is driven by the `VITE_DEFAULT_LANGUAGE` environment variable.
+
+### Stylelint
+
+Lints styles inside `.vue` SFCs and standalone CSS using the recommended Vue config. It helps prevent invalid CSS and enforces consistent conventions across the codebase.
+
+### webfontloader
+
+Asynchronously loads web fonts to avoid render-blocking and reduce layout shifts. Fonts are preloaded at startup, improving perceived performance and visual stability.
