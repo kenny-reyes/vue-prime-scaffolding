@@ -1,1 +1,23 @@
 * text=auto eol=lf
+*.png filter=lfs diff=lfs merge=lfs binary
+*.jpg filter=lfs diff=lfs merge=lfs binary
+*.jpeg filter=lfs diff=lfs merge=lfs binary
+*.gif filter=lfs diff=lfs merge=lfs binary
+*.ico filter=lfs diff=lfs merge=lfs binary
+*.mov filter=lfs diff=lfs merge=lfs binary
+*.mp4 filter=lfs diff=lfs merge=lfs binary
+*.mp3 filter=lfs diff=lfs merge=lfs binary
+*.flv filter=lfs diff=lfs merge=lfs binary
+*.fla filter=lfs diff=lfs merge=lfs binary
+*.swf filter=lfs diff=lfs merge=lfs binary
+*.gz filter=lfs diff=lfs merge=lfs binary
+*.zip filter=lfs diff=lfs merge=lfs binary
+*.7z filter=lfs diff=lfs merge=lfs binary
+*.dcm filter=lfs diff=lfs merge=lfs binary
+*.ttf filter=lfs diff=lfs merge=lfs binary
+*.eot binary
+*.woff filter=lfs diff=lfs merge=lfs binary
+*.pyc binary
+*.pdf filter=lfs diff=lfs merge=lfs binary
+*.glb filter=lfs diff=lfs merge=lfs binary
+
