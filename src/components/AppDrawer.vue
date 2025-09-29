@@ -1,22 +1,24 @@
 <script setup lang="ts">
   import { useRouter } from 'vue-router'
   import { useApplicationStore } from '@/stores/application'
-  import { ref } from 'vue'
+  import { ref, computed } from 'vue'
+  import { useI18n } from 'vue-i18n'
 
   const router = useRouter()
   const applicationStore = useApplicationStore()
+  const { t } = useI18n({ useScope: 'global' })
 
-  const items = ref([
+  const items = computed(() => [
     {
       label: 'Documents',
       items: [
         {
-          label: 'Home',
+          label: t('menu.home'),
           icon: 'pi pi-home',
           command: () => router.push('/')
         },
         {
-          label: 'Content',
+          label: t('menu.content'),
           icon: 'pi pi-book', // prime icons
           command: () => router.push('/content')
         }

@@ -76,17 +76,19 @@ pnpm add primevue @primeuix/themes
 ### Basic setup
 
 In your entry file (e.g., `src/main.ts`) configure PrimeVue and a theme. Example using the Aura theme:
+I don't know but possibly the company will provide the theme like the commented line
 
 ```ts
 import { createApp } from 'vue'
 import App from './App.vue'
 import PrimeVue from 'primevue/config'
 import Aura from '@primeuix/themes/aura'
-
+// import CustomPreset from '@companyName/themes/customPreset'
 const app = createApp(App)
 
 app.use(PrimeVue, {
   theme: {
+    // preset: CustomPreset
     preset: Aura
   }
 })

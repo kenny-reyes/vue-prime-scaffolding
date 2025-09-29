@@ -2,11 +2,12 @@
   "code": "ES",
   "menu": {
     "users": "Usuarios",
-    "patients": "Pacientes",
-    "studies": "Estudios",
-    "series": "Series",
-    "owners": "Clientes",
-    "protocols": "Protocolos"
+    "home": "Inicio",
+    "content": "Contenido"
+  },
+  "welcome": {
+    "title": "¡Bienvenidos a PrimeVue demo! 🚀",
+    "subtitle": "Esto es una demostracion de los componentes de VuePrime con Vue3"
   },
   "actions": {
     "search": "Buscar",
@@ -18,8 +19,6 @@
   },
   "errors": {
     "required": "Requerido",
-    "invalid": "Inválido",
-    "min": "Mínimo",
-    "max": "Máximo"
+    "invalid": "Inválido"
   }
 }

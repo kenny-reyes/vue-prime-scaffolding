@@ -25,7 +25,7 @@ const usePrimeVue = (): Plugin => ({
   install(app) {
     app.use(PrimeVue, {
       theme: {
-        preset: Aura, // you can change the theme here f.e. Material
+        preset: Material, // you can change the theme here f.e. Material
         options: {
           darkModeSelector: '.app-dark',
           cssLayer: {

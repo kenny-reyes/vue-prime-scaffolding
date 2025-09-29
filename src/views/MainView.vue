@@ -2,9 +2,12 @@
   import { ref, onMounted } from 'vue'
   import { useApplicationStore } from '@/stores/application'
   import AppDrawer from '@/components/AppDrawer.vue'
+  import { useI18n } from 'vue-i18n'
 
   const applicationStore = useApplicationStore()
   const isDark = ref(false)
+  const altLanguage = ref(false)
+  const { locale } = useI18n({ useScope: 'global' })
 
   const userMenuItems = ref([
     { label: 'Profile', icon: 'mdi mdi-account' },
@@ -17,6 +20,13 @@
     isDark.value = !isDark.value
     document.documentElement.classList.toggle('app-dark', isDark.value)
     localStorage.setItem('theme', isDark.value ? 'dark' : 'light')
+  }
+
+  const toggleLanguage = () => {
+    altLanguage.value = !altLanguage.value
+    if (altLanguage.value) locale.value = 'es-ES'
+    else locale.value = 'en-US'
+    // I'm not saving the language like the theme
   }
 
   onMounted(() => {
@@ -46,6 +56,12 @@
         </template>
         <template #end>
           <div class="flex align-items-center gap-2">
+            <Button
+              text
+              @click="toggleLanguage"
+            >
+              {{ altLanguage ? 'ES' : 'EN' }}</Button
+            >
             <Button
               :icon="isDark ? 'mdi mdi-white-balance-sunny' : 'mdi mdi-moon-waning-crescent'"
               text

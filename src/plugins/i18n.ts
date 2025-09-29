@@ -8,6 +8,7 @@ const defaultLanguage = import.meta.env.VITE_DEFAULT_LANGUAGE as string
 type MessageSchema = typeof esEs
 
 const getVueI18n = (language: string) => {
+  console.log(language)
   const dateTimeFormats = {
     'es-ES': esEsFormat as Record<string, Intl.DateTimeFormatOptions>,
     'en-US': enUsFormat as Record<string, Intl.DateTimeFormatOptions>

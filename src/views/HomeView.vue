@@ -1,8 +1,10 @@
 <script setup lang="ts">
   import { ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
 
+  const { t } = useI18n({ useScope: 'global' })
   const stats = ref([
-    { label: 'Users', value: '1,234', icon: 'mdi mdi-account-multiple' },
+    { label: t('menu.users'), value: '1,234', icon: 'mdi mdi-account-multiple' },
     { label: 'Projects', value: '56', icon: 'mdi mdi-folder' },
     { label: 'Tasks', value: '789', icon: 'mdi mdi-check-circle' },
     { label: 'Revenue', value: '$12.4k', icon: 'mdi mdi-currency-usd' }
@@ -19,9 +21,9 @@
 <template>
   <div>
     <Card class="mb-4">
-      <template #title>Welcome to PrimeVue Demo! 🚀</template>
+      <template #title>{{ t('welcome.title') }}</template>
       <template #content>
-        <p>This demonstrates PrimeVue components with Vue 3.</p>
+        <p>{{ t('welcome.subtitle') }}</p>
       </template>
     </Card>
 
